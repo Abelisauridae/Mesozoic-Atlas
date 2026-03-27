@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Stegosaur silhouette</title>
+  <desc id="desc">Stylized plated stegosaur silhouette.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e7e4ba" />
+      <stop offset="100%" stop-color="#c0c38a" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#715338" />
+      <stop offset="100%" stop-color="#533822" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="378" cy="76" r="26" fill="#eef0ca" opacity="0.7" />
+  <path d="M0 248 C99 225 169 216 250 226 C335 236 412 240 480 220 V320 H0 Z" fill="url(#ground)" />
+  <path d="M98 226 C117 203 146 188 188 178 C227 168 278 168 319 175 C348 180 372 193 389 213 C394 219 393 227 384 234 C369 245 339 250 305 250 H163 C127 250 105 243 98 226 Z" fill="#26170f"/>
+  <path d="M142 178 L160 132 L183 176 Z M184 173 L203 122 L226 172 Z M229 170 L247 118 L270 170 Z M274 170 L292 124 L314 174 Z M317 177 L334 139 L354 184 Z" fill="#26170f"/>
+  <path d="M152 244 L145 292 H162 L170 244 Z" fill="#26170f"/>
+  <path d="M214 247 L206 292 H223 L231 247 Z" fill="#26170f"/>
+  <path d="M286 247 L278 292 H295 L302 247 Z" fill="#26170f"/>
+  <path d="M344 239 L336 292 H353 L361 239 Z" fill="#26170f"/>
+  <path d="M384 216 L433 198 L447 206 L399 226 Z" fill="#26170f"/>
+  <path d="M399 224 L448 215 L456 224 L408 232 Z" fill="#26170f"/>
+</svg>

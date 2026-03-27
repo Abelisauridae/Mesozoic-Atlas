@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ceratopsidae sample art</title>
+  <desc id="desc">Stylized atlas illustration of a horned ceratopsian in side profile.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f1ddb0" />
+      <stop offset="55%" stop-color="#e9c58c" />
+      <stop offset="100%" stop-color="#d3ad7e" />
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#c49b79" />
+      <stop offset="100%" stop-color="#9f7458" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8b5f44" />
+      <stop offset="100%" stop-color="#5e3d2a" />
+    </linearGradient>
+    <linearGradient id="hide" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6f4c39" />
+      <stop offset="100%" stop-color="#432921" />
+    </linearGradient>
+    <linearGradient id="frill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7a5a46" />
+      <stop offset="100%" stop-color="#4e3126" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)" rx="36" />
+  <circle cx="210" cy="112" r="72" fill="#fff1cf" opacity="0.64" />
+  <path d="M0 355 C150 309 284 295 410 313 C552 334 697 330 960 286 V418 H0 Z" fill="url(#hill)" opacity="0.7" />
+  <path d="M0 430 C183 398 333 390 494 409 C644 427 782 433 960 389 V640 H0 Z" fill="url(#ground)" />
+  <g transform="translate(108 214)">
+    <path d="M44 213 C74 183 111 159 157 141 C237 108 335 99 423 115 C506 130 579 167 615 218 C634 244 627 268 599 278 C562 292 508 296 448 296 H224 C141 296 84 282 55 249 C41 232 38 223 44 213 Z" fill="url(#hide)" />
+    <path d="M446 110 C494 45 578 18 687 22 L762 49 L736 73 L778 90 L742 111 L682 112 L628 149 Z" fill="url(#frill)" />
+    <path d="M657 69 L775 22 L815 36 L730 74 Z" fill="#4d3024" />
+    <path d="M646 107 L762 107 L802 126 L715 129 Z" fill="#4d3024" />
+    <path d="M571 134 L629 84 L688 74 L645 127 Z" fill="#4d3024" />
+    <path d="M188 284 C194 322 192 349 186 376 H208 C217 343 220 313 217 280 Z" fill="#321d15" />
+    <path d="M313 289 C317 327 315 355 309 384 H331 C341 351 344 320 340 286 Z" fill="#321d15" />
+    <path d="M441 288 C446 327 443 354 436 383 H459 C468 349 471 319 468 284 Z" fill="#321d15" />
+    <path d="M536 279 C543 315 543 346 539 376 H560 C568 344 570 314 568 274 Z" fill="#321d15" />
+    <path d="M80 220 L49 208 L57 192 L88 201 Z" fill="#321d15" />
+    <path d="M143 226 C193 188 257 170 331 168 C426 166 512 197 541 243 C509 266 455 278 389 280 H238 C196 280 161 271 132 251 C132 240 136 232 143 226 Z" fill="#8c6854" opacity="0.85" />
+    <circle cx="607" cy="137" r="6" fill="#15100f" />
+    <path d="M620 150 C602 160 582 168 561 174" fill="none" stroke="#2a1711" stroke-width="10" stroke-linecap="round" />
+    <path d="M311 132 C344 123 382 119 418 122" fill="none" stroke="#9e7963" stroke-width="12" stroke-linecap="round" opacity="0.55" />
+  </g>
+</svg>

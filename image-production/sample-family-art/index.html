@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dinosaur Atlas Family Art Samples</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f4ecde;
+        --ink: #2f2118;
+        --muted: #725947;
+        --card: rgba(255, 251, 245, 0.9);
+        --stroke: rgba(77, 55, 33, 0.16);
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 24%),
+          linear-gradient(180deg, #e8d4a3 0%, var(--paper) 46%, #e5c27b 100%);
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.55;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .card {
+        padding: 14px;
+        border-radius: 24px;
+        border: 1px solid var(--stroke);
+        background: var(--card);
+        box-shadow: 0 16px 30px rgba(73, 54, 27, 0.08);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 18px;
+        border: 1px solid var(--stroke);
+        background: #fff9f1;
+      }
+
+      h2 {
+        margin: 14px 0 8px;
+        font-size: 1.45rem;
+      }
+
+      a {
+        color: #7b3117;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Family Art Samples</h1>
+      <p>
+        First-pass atlas illustrations for five dinosaur families, all using one shared visual style:
+        warm natural-history palette, single side profile, readable silhouettes, and matching composition.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <img src="./abelisauridae.svg" alt="Abelisauridae sample" />
+          <h2>Abelisauridae</h2>
+          <a href="./abelisauridae.svg">Open SVG</a>
+        </article>
+        <article class="card">
+          <img src="./ceratopsidae.svg" alt="Ceratopsidae sample" />
+          <h2>Ceratopsidae</h2>
+          <a href="./ceratopsidae.svg">Open SVG</a>
+        </article>
+        <article class="card">
+          <img src="./hadrosauridae.svg" alt="Hadrosauridae sample" />
+          <h2>Hadrosauridae</h2>
+          <a href="./hadrosauridae.svg">Open SVG</a>
+        </article>
+        <article class="card">
+          <img src="./dromaeosauridae.svg" alt="Dromaeosauridae sample" />
+          <h2>Dromaeosauridae</h2>
+          <a href="./dromaeosauridae.svg">Open SVG</a>
+        </article>
+        <article class="card">
+          <img src="./mamenchisauridae.svg" alt="Mamenchisauridae sample" />
+          <h2>Mamenchisauridae</h2>
+          <a href="./mamenchisauridae.svg">Open SVG</a>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

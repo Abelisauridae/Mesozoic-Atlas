@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Mamenchisauridae sample art</title>
+  <desc id="desc">Stylized atlas illustration of a mamenchisaurid sauropod with an elongated neck.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e7ddbc" />
+      <stop offset="55%" stop-color="#d7c38f" />
+      <stop offset="100%" stop-color="#c2a67d" />
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9ca17e" />
+      <stop offset="100%" stop-color="#72856b" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7a5a41" />
+      <stop offset="100%" stop-color="#513524" />
+    </linearGradient>
+    <linearGradient id="hide" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7b6755" />
+      <stop offset="100%" stop-color="#4c372c" />
+    </linearGradient>
+    <linearGradient id="belly" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#a58f76" />
+      <stop offset="100%" stop-color="#755845" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)" rx="36" />
+  <circle cx="218" cy="112" r="72" fill="#fff2d4" opacity="0.6" />
+  <path d="M0 350 C151 319 298 312 439 324 C576 336 704 336 960 299 V421 H0 Z" fill="url(#hill)" opacity="0.75" />
+  <path d="M0 435 C150 409 310 402 501 418 C681 433 806 438 960 404 V640 H0 Z" fill="url(#ground)" />
+  <g transform="translate(74 212)">
+    <path d="M80 252 C126 225 183 205 251 195 C302 187 348 188 392 198 C428 206 460 220 487 241 L557 246 L626 243 L691 231 L741 231 L768 244 L745 255 L777 263 L759 275 L708 273 L655 286 L586 294 L527 294 L474 307 H310 C220 307 148 292 102 269 Z" fill="url(#hide)" />
+    <path d="M511 244 C481 219 461 187 458 152 C452 86 493 35 585 12 C617 4 651 0 683 2 C708 4 726 13 736 28 C744 42 742 60 731 80 C707 122 658 159 582 184 C547 196 520 214 511 244 Z" fill="url(#hide)" />
+    <path d="M575 19 C595 4 626 -4 663 2 C670 24 664 45 647 63 C633 77 613 89 590 98 C563 109 537 115 517 116 C518 83 537 47 575 19 Z" fill="#4b3429" />
+    <circle cx="623" cy="36" r="4.5" fill="#15100f" />
+    <path d="M642 43 C628 53 610 60 592 64" fill="none" stroke="#291812" stroke-width="8" stroke-linecap="round" />
+    <path d="M215 302 C223 344 223 378 218 412 H241 C249 378 250 344 246 300 Z" fill="#2d1a14" />
+    <path d="M353 305 C361 348 362 382 357 418 H380 C387 383 389 348 385 302 Z" fill="#2d1a14" />
+    <path d="M503 302 C510 346 511 382 506 419 H529 C536 383 538 347 535 299 Z" fill="#2d1a14" />
+    <path d="M620 295 C627 340 628 378 622 415 H646 C653 379 655 341 651 291 Z" fill="#2d1a14" />
+    <path d="M65 248 C38 232 13 215 -8 198 L20 199 C42 214 67 228 95 241 Z" fill="#2d1a14" />
+    <path d="M176 251 C237 228 309 222 387 229 C448 235 492 246 530 265 C491 281 439 290 372 291 H242 C216 291 187 275 176 251 Z" fill="url(#belly)" opacity="0.9" />
+    <path d="M493 220 C501 170 521 134 555 110 C585 88 620 75 661 68" fill="none" stroke="#ac967d" stroke-width="18" stroke-linecap="round" opacity="0.55" />
+    <path d="M501 176 C530 161 570 147 611 142" fill="none" stroke="#ac967d" stroke-width="10" stroke-linecap="round" opacity="0.5" />
+  </g>
+</svg>

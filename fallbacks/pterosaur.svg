@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Pterosaur silhouette</title>
+  <desc id="desc">Stylized pterosaur silhouette gliding over a coastal landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6e1d4" />
+      <stop offset="100%" stop-color="#b7c8c1" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#6e5741" />
+      <stop offset="100%" stop-color="#4d3827" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="386" cy="74" r="28" fill="#f6efe0" opacity="0.74" />
+  <path d="M0 252 C88 232 176 226 248 232 C330 239 406 241 480 224 V320 H0 Z" fill="url(#ground)" />
+  <path d="M230 162 C260 136 286 126 310 132 C323 136 332 147 332 159 C333 171 324 180 310 183 C299 185 291 189 285 196 L271 202 L263 200 L271 189 C262 185 255 184 247 187 C236 191 225 191 214 187 C206 184 201 177 202 168 C204 159 213 154 230 162 Z" fill="#251710"/>
+  <path d="M245 170 L118 124 L55 116 L74 132 L130 144 L84 156 L50 176 L111 162 L170 168 L243 182 Z" fill="#251710"/>
+  <path d="M252 172 L360 118 L428 110 L403 127 L355 141 L394 152 L430 171 L372 159 L324 165 L254 181 Z" fill="#251710"/>
+  <path d="M265 197 L255 244 H269 L280 200 Z" fill="#251710"/>
+  <path d="M293 193 L321 224 L333 222 L311 190 Z" fill="#251710"/>
+</svg>

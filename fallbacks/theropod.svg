@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Theropod silhouette</title>
+  <desc id="desc">Stylized theropod dinosaur silhouette on a warm prehistoric landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8dba7" />
+      <stop offset="100%" stop-color="#f0b97a" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#8f5b35" />
+      <stop offset="100%" stop-color="#6a3c22" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="386" cy="82" r="34" fill="#fff2c6" opacity="0.65" />
+  <path d="M0 244 C95 208 180 210 255 230 C333 250 400 250 480 223 V320 H0 Z" fill="url(#ground)" />
+  <path d="M64 236 C125 201 176 182 220 181 C246 180 263 187 281 197 L330 188 L351 167 L384 160 L393 171 L370 182 L359 194 L383 208 L376 219 L332 209 L299 223 L250 229 L218 232 L180 239 L120 246 Z" fill="#26170f"/>
+  <path d="M197 229 L179 291 H193 L210 246 L225 291 H239 L226 232 Z" fill="#26170f"/>
+  <path d="M260 221 L284 292 H299 L286 230 L306 292 H321 L302 220 Z" fill="#26170f"/>
+  <path d="M134 212 L108 191 L118 182 L148 199 Z" fill="#26170f"/>
+  <path d="M312 197 L322 214 L343 217 L338 228 L314 224 L302 206 Z" fill="#26170f"/>
+</svg>

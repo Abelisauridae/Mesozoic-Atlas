@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Ceratopsian silhouette</title>
+  <desc id="desc">Stylized horned ceratopsian dinosaur silhouette.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6e6b2" />
+      <stop offset="100%" stop-color="#e2b97b" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#845534" />
+      <stop offset="100%" stop-color="#643c27" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="88" cy="72" r="28" fill="#fff1c9" opacity="0.7" />
+  <path d="M0 248 C98 230 178 221 252 229 C343 238 418 239 480 223 V320 H0 Z" fill="url(#ground)" />
+  <path d="M104 224 C122 205 145 191 173 180 C216 164 263 162 301 170 C321 174 341 181 357 192 C381 208 391 226 382 236 C371 248 339 252 314 252 H183 C145 252 115 244 104 224 Z" fill="#25170f"/>
+  <path d="M325 168 C342 141 370 129 407 131 L429 141 L413 154 L430 159 L413 170 L382 169 L364 183 Z" fill="#25170f"/>
+  <path d="M404 149 L441 134 L458 139 L431 153 Z" fill="#25170f"/>
+  <path d="M395 160 L430 164 L446 173 L417 175 Z" fill="#25170f"/>
+  <path d="M174 246 L166 292 H183 L191 246 Z" fill="#25170f"/>
+  <path d="M228 248 L220 292 H237 L244 248 Z" fill="#25170f"/>
+  <path d="M286 247 L278 292 H295 L303 247 Z" fill="#25170f"/>
+  <path d="M338 242 L330 292 H347 L355 242 Z" fill="#25170f"/>
+  <path d="M110 218 L90 206 L98 196 L122 205 Z" fill="#25170f"/>
+</svg>

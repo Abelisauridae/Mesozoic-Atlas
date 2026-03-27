@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Generic dinosaur silhouette</title>
+  <desc id="desc">Stylized classic dinosaur silhouette used as a generic fallback image.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eadfda" />
+      <stop offset="100%" stop-color="#cca98e" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#765342" />
+      <stop offset="100%" stop-color="#533728" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="102" cy="76" r="28" fill="#f9efe6" opacity="0.72" />
+  <path d="M0 250 C92 225 170 216 251 226 C333 236 407 240 480 224 V320 H0 Z" fill="url(#ground)" />
+  <path d="M72 230 C120 202 169 186 216 180 C254 176 284 181 308 194 L343 192 L366 175 L396 170 L406 178 L386 189 L376 201 L403 214 L395 225 L355 218 L325 228 L286 235 L224 238 H158 C122 238 92 235 72 230 Z" fill="#26170f"/>
+  <path d="M308 194 C320 165 340 149 367 145 L383 151 L386 161 L374 169 L389 175 L383 184 L361 187 L346 196 Z" fill="#26170f"/>
+  <path d="M181 233 L165 292 H180 L194 245 L207 292 H223 L213 234 Z" fill="#26170f"/>
+  <path d="M243 232 L259 292 H274 L263 234 L284 292 H301 L282 230 Z" fill="#26170f"/>
+  <path d="M126 216 L104 199 L114 190 L139 205 Z" fill="#26170f"/>
+  <path d="M338 204 L350 218 L371 222 L366 230 L344 227 L331 212 Z" fill="#26170f"/>
+</svg>

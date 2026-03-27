@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Turtle silhouette</title>
+  <desc id="desc">Stylized turtle silhouette on a calm lagoon shoreline.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e8dfc7" />
+      <stop offset="100%" stop-color="#b6ccad" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#6f573b" />
+      <stop offset="100%" stop-color="#4e3823" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="398" cy="76" r="28" fill="#f6f0df" opacity="0.72" />
+  <path d="M0 248 C82 225 169 219 246 227 C324 235 403 239 480 222 V320 H0 Z" fill="url(#ground)" />
+  <path d="M118 223 C140 201 170 188 209 184 C249 180 282 185 309 198 C326 206 337 219 341 232 C333 243 319 250 301 254 C276 260 245 262 208 262 C174 262 147 256 128 245 C119 240 112 232 118 223 Z" fill="#251810"/>
+  <path d="M309 205 C325 194 343 190 360 192 C372 194 379 200 379 209 C379 218 371 224 357 225 C346 226 334 231 323 239 Z" fill="#251810"/>
+  <path d="M138 246 L119 267 L132 270 L152 248 Z" fill="#251810"/>
+  <path d="M196 258 L185 292 H199 L210 260 Z" fill="#251810"/>
+  <path d="M258 258 L249 292 H263 L274 260 Z" fill="#251810"/>
+  <path d="M299 248 L320 268 L334 268 L311 246 Z" fill="#251810"/>
+  <path d="M114 226 L90 218 L86 209 L104 209 L122 217 Z" fill="#251810"/>
+</svg>

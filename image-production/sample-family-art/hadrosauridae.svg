@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Hadrosauridae sample art</title>
+  <desc id="desc">Stylized atlas illustration of a hadrosaurid in side profile.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#efe3bb" />
+      <stop offset="55%" stop-color="#e2c793" />
+      <stop offset="100%" stop-color="#cfab82" />
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#a9a37e" />
+      <stop offset="100%" stop-color="#7b8560" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7d5d3f" />
+      <stop offset="100%" stop-color="#553926" />
+    </linearGradient>
+    <linearGradient id="hide" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7b5e44" />
+      <stop offset="100%" stop-color="#503528" />
+    </linearGradient>
+    <linearGradient id="belly" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#a58868" />
+      <stop offset="100%" stop-color="#735340" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)" rx="36" />
+  <circle cx="760" cy="116" r="74" fill="#fff1d1" opacity="0.62" />
+  <path d="M0 354 C147 317 291 307 438 326 C572 343 719 336 960 299 V424 H0 Z" fill="url(#hill)" opacity="0.74" />
+  <path d="M0 438 C171 404 341 401 493 415 C668 431 801 438 960 402 V640 H0 Z" fill="url(#ground)" />
+  <g transform="translate(115 230)">
+    <path d="M44 199 C89 156 153 126 231 114 C338 98 451 118 534 154 C596 181 642 220 658 255 C668 279 658 293 628 303 C585 317 523 321 447 321 H214 C137 321 78 303 50 252 C39 232 37 214 44 199 Z" fill="url(#hide)" />
+    <path d="M578 147 C590 103 622 75 675 67 L703 78 L694 98 L720 110 L704 126 L664 129 L632 154 Z" fill="#4a2f23" />
+    <path d="M208 309 C214 349 214 385 208 415 H231 C238 380 240 344 236 305 Z" fill="#342017" />
+    <path d="M343 314 C349 355 348 388 342 418 H364 C372 383 374 349 370 309 Z" fill="#342017" />
+    <path d="M471 316 C478 355 478 388 472 420 H495 C503 385 505 350 501 311 Z" fill="#342017" />
+    <path d="M575 304 C582 341 583 374 579 406 H600 C608 373 610 340 606 298 Z" fill="#342017" />
+    <path d="M113 200 L86 183 L96 170 L126 189 Z" fill="#342017" />
+    <path d="M187 215 C253 178 331 165 415 169 C503 173 567 191 610 225 C581 257 526 273 453 279 H289 C235 279 190 268 151 240 C151 231 165 221 187 215 Z" fill="url(#belly)" opacity="0.96" />
+    <path d="M274 132 C311 120 355 116 401 119" fill="none" stroke="#b39774" stroke-width="14" stroke-linecap="round" opacity="0.7" />
+    <path d="M346 143 C392 136 447 138 491 149" fill="none" stroke="#b39774" stroke-width="10" stroke-linecap="round" opacity="0.5" />
+    <circle cx="629" cy="128" r="5.5" fill="#15100f" />
+    <path d="M644 139 C626 149 603 155 581 159" fill="none" stroke="#2b1812" stroke-width="9" stroke-linecap="round" />
+  </g>
+</svg>

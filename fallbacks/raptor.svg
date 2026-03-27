@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Raptor silhouette</title>
+  <desc id="desc">Stylized dromaeosaur-like dinosaur silhouette with a raised sickle claw.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e7debe" />
+      <stop offset="100%" stop-color="#cda86e" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#755235" />
+      <stop offset="100%" stop-color="#543621" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="384" cy="84" r="30" fill="#f8efd6" opacity="0.72" />
+  <path d="M0 248 C88 221 164 216 244 226 C332 237 406 240 480 224 V320 H0 Z" fill="url(#ground)" />
+  <path d="M88 228 C127 203 168 187 211 181 C248 176 276 181 299 194 L341 190 L362 171 L392 166 L403 175 L383 185 L373 198 L399 214 L392 224 L350 215 L325 225 L288 232 L238 237 H181 C145 237 111 234 88 228 Z" fill="#24170f"/>
+  <path d="M304 194 C313 171 330 157 355 152 L370 157 L372 166 L361 173 L374 179 L367 187 L348 190 L333 198 Z" fill="#24170f"/>
+  <path d="M183 231 L168 292 H183 L196 244 L208 292 H223 L213 233 Z" fill="#24170f"/>
+  <path d="M246 228 L261 269 L278 229 H294 L275 279 L286 292 H270 L258 281 L250 292 H234 L246 274 L230 228 Z" fill="#24170f"/>
+  <path d="M138 213 L116 196 L126 187 L150 201 Z" fill="#24170f"/>
+  <path d="M323 202 L332 217 L352 221 L347 230 L326 227 L316 211 Z" fill="#24170f"/>
+</svg>

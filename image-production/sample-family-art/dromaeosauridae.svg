@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Dromaeosauridae sample art</title>
+  <desc id="desc">Stylized atlas illustration of a feathered dromaeosaurid in side profile.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e4d9be" />
+      <stop offset="55%" stop-color="#d1b890" />
+      <stop offset="100%" stop-color="#bd9b7c" />
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#93886e" />
+      <stop offset="100%" stop-color="#72614f" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7a553b" />
+      <stop offset="100%" stop-color="#513425" />
+    </linearGradient>
+    <linearGradient id="hide" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5d483d" />
+      <stop offset="100%" stop-color="#37241d" />
+    </linearGradient>
+    <linearGradient id="feathers" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#8c7567" />
+      <stop offset="100%" stop-color="#5c4538" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)" rx="36" />
+  <circle cx="794" cy="104" r="68" fill="#fff1d5" opacity="0.58" />
+  <path d="M0 358 C136 320 293 313 446 329 C588 344 738 340 960 303 V424 H0 Z" fill="url(#hill)" opacity="0.72" />
+  <path d="M0 440 C170 408 329 401 497 418 C664 435 805 439 960 404 V640 H0 Z" fill="url(#ground)" />
+  <g transform="translate(118 252)">
+    <path d="M38 183 C86 153 144 132 207 122 C261 114 304 116 344 126 L423 120 L474 86 L529 78 L551 88 L535 102 L556 112 L544 125 L504 128 L460 146 L410 157 L352 169 L239 176 H128 C93 176 60 180 38 183 Z" fill="url(#hide)" />
+    <path d="M336 126 C349 96 372 77 408 68 L428 76 L431 89 L417 98 L434 105 L427 117 L400 120 L380 132 Z" fill="#473026" />
+    <circle cx="393" cy="93" r="4.5" fill="#16100f" />
+    <path d="M225 176 C238 204 244 237 246 278 H265 C268 242 265 204 256 172 Z" fill="#2d1a14" />
+    <path d="M293 173 C309 206 320 243 327 288 H347 C345 240 336 200 320 167 Z" fill="#2d1a14" />
+    <path d="M334 176 C349 209 364 253 376 307 H397 C391 251 380 209 362 172 Z" fill="#2d1a14" />
+    <path d="M287 288 L309 255 L327 260 L304 301 Z" fill="#2d1a14" />
+    <path d="M68 173 L36 151 L47 139 L83 159 Z" fill="#2d1a14" />
+    <path d="M434 131 L451 153 L484 157 L477 168 L445 165 L425 143 Z" fill="#2d1a14" />
+    <path d="M62 179 C111 166 165 163 220 167 C260 170 305 175 342 183 C333 193 315 199 293 201 L150 203 C113 203 84 194 62 179 Z" fill="#8c7364" opacity="0.88" />
+    <path d="M101 160 C130 134 169 115 221 102 C188 127 161 149 141 168 Z" fill="url(#feathers)" />
+    <path d="M419 123 C455 145 487 173 516 207 L540 200 C511 164 475 136 432 112 Z" fill="url(#feathers)" />
+    <path d="M448 151 C493 136 548 135 603 148 L624 141 L649 145 L624 155 L658 164 L646 175 L610 170 C568 180 528 180 492 173 Z" fill="url(#feathers)" />
+    <path d="M599 149 C627 156 654 168 679 185 L695 179 C673 156 646 139 616 130 Z" fill="url(#feathers)" />
+  </g>
+</svg>

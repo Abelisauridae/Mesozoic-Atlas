@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Birdlike dinosaur silhouette</title>
+  <desc id="desc">Stylized birdlike dinosaur silhouette with long legs and tail feathers.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d8eadf" />
+      <stop offset="100%" stop-color="#a9ceb8" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#6f5434" />
+      <stop offset="100%" stop-color="#4e341f" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="98" cy="78" r="28" fill="#f1f6e7" opacity="0.74" />
+  <path d="M0 250 C86 228 160 220 239 227 C328 235 403 241 480 224 V320 H0 Z" fill="url(#ground)" />
+  <path d="M138 226 C160 201 185 184 215 175 C243 166 268 165 292 171 C314 176 330 186 345 198 L380 207 L402 198 L420 204 L393 216 L414 224 L404 235 L372 228 L349 225 C333 234 312 241 286 245 L224 248 C192 248 161 241 138 226 Z" fill="#24170f"/>
+  <path d="M307 175 C315 149 334 132 364 126 L382 132 L386 143 L374 151 L388 157 L381 166 L361 168 L343 179 Z" fill="#24170f"/>
+  <path d="M214 245 L208 292 H223 L230 248 Z" fill="#24170f"/>
+  <path d="M271 243 L265 292 H279 L287 245 Z" fill="#24170f"/>
+  <path d="M362 208 L392 182 L405 184 L388 201 L422 194 L437 200 L402 212 L430 221 L423 231 L388 225 Z" fill="#24170f"/>
+  <path d="M162 220 L144 204 L153 195 L173 211 Z" fill="#24170f"/>
+</svg>

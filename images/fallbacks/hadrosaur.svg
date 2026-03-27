@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Hadrosaur silhouette</title>
+  <desc id="desc">Stylized duck-billed dinosaur silhouette.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#efe2b9" />
+      <stop offset="100%" stop-color="#ddb580" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#7f5737" />
+      <stop offset="100%" stop-color="#5f3d28" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="92" cy="74" r="28" fill="#fff0c6" opacity="0.72" />
+  <path d="M0 246 C95 223 173 215 250 225 C336 236 408 239 480 222 V320 H0 Z" fill="url(#ground)" />
+  <path d="M102 220 C134 194 167 180 203 172 C244 162 288 164 325 177 C355 188 382 204 393 221 C399 230 395 238 382 243 C360 251 326 252 300 252 H177 C139 252 111 243 102 220 Z" fill="#26180f"/>
+  <path d="M344 177 C357 152 378 138 406 136 L420 143 L414 155 L430 161 L414 170 L393 171 L376 182 Z" fill="#26180f"/>
+  <path d="M171 243 L164 292 H180 L186 243 Z" fill="#26180f"/>
+  <path d="M231 247 L223 292 H240 L247 247 Z" fill="#26180f"/>
+  <path d="M293 246 L286 292 H303 L309 246 Z" fill="#26180f"/>
+  <path d="M339 238 L332 292 H348 L355 239 Z" fill="#26180f"/>
+  <path d="M114 219 L92 209 L98 198 L122 206 Z" fill="#26180f"/>
+</svg>

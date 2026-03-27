@@ -1,0 +1,83 @@
+# Family Card Prompt Plan
+
+- Rows generated: `110`
+- Draft-ready prompts: `81`
+- Needs light review: `25`
+- Needs scientific review: `1`
+- Manual review required: `3`
+
+## Prompt groups
+
+- `abelisaurid_predator`: `1`
+- `alvarezsaur_runner`: `2`
+- `armored_ankylosaur`: `1`
+- `armored_nodosaur`: `2`
+- `basal_sauropodomorph`: `9`
+- `basal_theropod_predator`: `4`
+- `ceratopsian_horned`: `1`
+- `ceratopsian_small`: `3`
+- `ceratosaur_predator`: `2`
+- `deinocheirid_giant`: `1`
+- `diving_bird`: `4`
+- `dromaeosaur_predator`: `1`
+- `early_bird_perching`: `9`
+- `early_sauropod`: `1`
+- `fallback_ornithischia`: `1`
+- `fallback_reptilia`: `1`
+- `fallback_saurischia`: `1`
+- `feathered_glider`: `3`
+- `ground_bird`: `11`
+- `hadrosaur_duckbill`: `1`
+- `heterodontosaur_small`: `1`
+- `iguanodont_ornithopod`: `2`
+- `large_flightless_bird`: `1`
+- `large_theropod_predator`: `6`
+- `megaraptor_predator`: `1`
+- `ootaxon_review`: `2`
+- `ornithomimosaur_runner`: `1`
+- `oviraptor_beaked`: `4`
+- `pachycephalosaur_dome`: `1`
+- `psittacosaur_beaked`: `1`
+- `sauropod_high_browser`: `2`
+- `sauropod_long_neck`: `2`
+- `sauropod_robust`: `7`
+- `sauropod_whiptail`: `3`
+- `shoreline_bird`: `3`
+- `small_ornithopod`: `7`
+- `spinosaurid_predator`: `1`
+- `stegosaur_plated`: `2`
+- `therizinosaur_browser`: `1`
+- `troodontid_predator`: `1`
+- `tyrannosauroid_predator`: `2`
+
+## Flagged rows
+
+- `Alethoalaornithidae` (`family-alethoalaornithidae`): needs_light_review — Many of these lineages need a final anatomical check for wing and tail proportions. Low species count; choose a representative body plan carefully.
+- `Anchiornithidae` (`family-anchiornithidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Avimimidae` (`family-avimimidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Baptornithidae` (`family-baptornithidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Cathayornithidae` (`family-cathayornithidae`): needs_light_review — Many of these lineages need a final anatomical check for wing and tail proportions. Low species count; choose a representative body plan carefully.
+- `Ceratosauridae` (`family-ceratosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Dilophosauridae` (`family-dilophosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Enantiornithidae` (`family-enantiornithidae`): needs_light_review — Many of these lineages need a final anatomical check for wing and tail proportions. Low species count; choose a representative body plan carefully.
+- `Eoenantiornithidae` (`family-eoenantiornithidae`): needs_light_review — Many of these lineages need a final anatomical check for wing and tail proportions. Low species count; choose a representative body plan carefully.
+- `Gargantuaviidae` (`family-gargantuaviidae`): needs_scientific_review — Very sparse family-level reference material; use this only as a first-pass concept prompt. Low species count; choose a representative body plan carefully.
+- `Guaibasauridae` (`family-guaibasauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Huayangosauridae` (`family-huayangosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Jeholosauridae` (`family-jeholosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Laevisoolithidae` (`family-laevisoolithidae`): manual_review_required — Do not batch-generate this one without choosing whether to depict eggs, tracks, or a likely producer animal. Low species count; choose a representative body plan carefully.
+- `Melanorosauridae` (`family-melanorosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Nemegtosauridae` (`family-nemegtosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Nqwebasauridae` (`family-nqwebasauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Ornithomimipodidae` (`family-ornithomimipodidae`): manual_review_required — Do not batch-generate this one without choosing whether to depict eggs, tracks, or a likely producer animal. Low species count; choose a representative body plan carefully.
+- `Paraortygidae` (`family-paraortygidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Parksosauridae` (`family-parksosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Rhabdodontidae` (`family-rhabdodontidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Scelidosauridae` (`family-scelidosauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Schizoouridae` (`family-schizoouridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Tetraonidae` (`family-tetraonidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Unaysauridae` (`family-unaysauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Vitakrisauridae` (`family-vitakrisauridae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Vulcanodontidae` (`family-vulcanodontidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Waltonortygidae` (`family-waltonortygidae`): needs_light_review — Low species count; choose a representative body plan carefully.
+- `Reptilia` (`fallback-reptilia`): manual_review_required — This is not a clean dinosaur-family prompt target; review the specific underlying species before generation. No representative genus found in the current atlas export. Low species count; choose a representative body plan carefully. Used for species that do not have a family in the dataset

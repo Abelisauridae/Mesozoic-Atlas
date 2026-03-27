@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Marine reptile silhouette</title>
+  <desc id="desc">Stylized marine reptile silhouette swimming across shallow water.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dce8e6" />
+      <stop offset="100%" stop-color="#9ec4ca" />
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#4d6d73" />
+      <stop offset="100%" stop-color="#2f4953" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="104" cy="72" r="28" fill="#eef6f4" opacity="0.74" />
+  <path d="M0 216 C82 202 164 200 246 208 C322 216 401 220 480 210 V320 H0 Z" fill="url(#sea)" />
+  <path d="M76 246 C117 226 155 214 191 210 C220 206 243 211 261 222 C287 238 311 245 338 243 L390 240 L418 226 L439 227 L427 238 L449 245 L443 254 L413 254 L386 258 L343 260 C309 262 274 255 242 242 C229 249 212 254 189 256 C142 260 103 257 76 246 Z" fill="#1f1613"/>
+  <path d="M261 222 C286 204 318 196 354 198 C373 199 387 205 390 214 C393 223 382 230 361 232 C330 235 304 240 284 247 Z" fill="#1f1613"/>
+  <path d="M185 246 L154 278 L167 282 L204 252 Z" fill="#1f1613"/>
+  <path d="M249 247 L222 286 L236 286 L264 251 Z" fill="#1f1613"/>
+  <path d="M299 248 L335 283 L351 282 L318 246 Z" fill="#1f1613"/>
+  <path d="M354 244 L401 266 L423 263 L380 239 Z" fill="#1f1613"/>
+</svg>

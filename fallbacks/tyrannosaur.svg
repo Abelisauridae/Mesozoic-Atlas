@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tyrannosaur silhouette</title>
+  <desc id="desc">Stylized large-headed tyrannosaur silhouette.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f0d5a4" />
+      <stop offset="100%" stop-color="#d89f68" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#7a5031" />
+      <stop offset="100%" stop-color="#5a3622" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)" rx="28" />
+  <circle cx="392" cy="82" r="32" fill="#fff0c0" opacity="0.7" />
+  <path d="M0 246 C98 221 168 215 247 224 C334 234 406 239 480 222 V320 H0 Z" fill="url(#ground)" />
+  <path d="M100 223 C126 199 162 181 206 171 C244 163 279 166 309 179 C333 189 352 204 361 221 C367 232 363 241 349 247 C324 257 286 257 247 253 H161 C126 249 105 240 100 223 Z" fill="#25170f"/>
+  <path d="M317 179 C333 147 360 127 395 126 L420 136 L430 149 L407 160 L430 166 L420 178 L390 180 L357 192 Z" fill="#25170f"/>
+  <path d="M210 249 L191 292 H208 L225 255 L240 292 H257 L244 252 Z" fill="#25170f"/>
+  <path d="M267 246 L285 292 H301 L288 248 L309 292 H325 L308 246 Z" fill="#25170f"/>
+  <path d="M152 213 L135 190 L144 181 L163 203 Z" fill="#25170f"/>
+  <path d="M289 204 L301 217 L322 220 L317 230 L295 226 L282 211 Z" fill="#25170f"/>
+</svg>
