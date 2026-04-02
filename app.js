@@ -194,6 +194,21 @@ function getLineageValue(specimen) {
   return specimen.lineage || specimen.majorClade || specimen.order || null;
 }
 
+function getNearestHigherClade(specimen) {
+  if (specimen.order) return specimen.order;
+  const path = specimen.taxonomyPath || [];
+  const lineageIndex = Math.max(
+    path.indexOf(specimen.lineage),
+    path.indexOf(specimen.majorClade)
+  );
+  for (let index = lineageIndex + 1; index < path.length; index += 1) {
+    const value = path[index];
+    if (!value || value === specimen.family || value === specimen.genus) continue;
+    return value;
+  }
+  return null;
+}
+
 function renderImageTag(image, className, loading = "lazy", srcKey = "detailUrl") {
   const src = image?.[srcKey] || image?.fallbackUrl || "images/fallbacks/general.svg";
   const fallback = image?.fallbackUrl || src;
@@ -604,6 +619,7 @@ function renderDetailPanel(filtered, selected) {
   }
 
   const lineage = getLineageValue(selected);
+  const higherClade = !selected.family ? getNearestHigherClade(selected) : null;
   const taxonomyChips = Array.from(
     new Set(
       [
@@ -664,6 +680,13 @@ function renderDetailPanel(filtered, selected) {
           ${escapeHtml(selected.description?.summary || "")}
         </p>
         ${
+          selected.classificationNote
+            ? `<div class="source-note"><strong>Classification note</strong>${escapeHtml(
+                selected.classificationNote
+              )}</div>`
+            : ""
+        }
+        ${
           selected.description?.commentary
             ? `<div class="source-note"><strong>Supplemental note</strong>${escapeHtml(
                 selected.description.commentary
@@ -683,8 +706,16 @@ function renderDetailPanel(filtered, selected) {
       </article>
       <article class="fact-card">
         <span>Family</span>
-        <strong>${escapeHtml(selected.family || "Unspecified")}</strong>
+        <strong>${escapeHtml(selected.family || "Not assigned")}</strong>
       </article>
+      ${
+        higherClade
+          ? `<article class="fact-card">
+        <span>Nearest higher clade</span>
+        <strong>${escapeHtml(higherClade)}</strong>
+      </article>`
+          : ""
+      }
       <article class="fact-card">
         <span>Geologic range</span>
         <strong>${escapeHtml(formatPeriod(selected))}</strong>
