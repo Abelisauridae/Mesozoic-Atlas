@@ -129,6 +129,18 @@ CRETACEOUS_INTERVAL_KEYS = {
     "maastrichtian",
 }
 
+CURATED_SPECIES_OVERRIDES = {
+    "Cryolophosaurus ellioti": {
+        "order": "Theropoda",
+        "classificationNote": (
+            "Family placement remains unresolved in the source taxonomy. "
+            "The atlas keeps Cryolophosaurus outside a named family and instead "
+            "surfaces it as an early theropod close to Averostra in recent "
+            "phylogenetic discussions."
+        ),
+    },
+}
+
 
 def build_pbdb_taxa_url(base_name: str) -> str:
     return (
@@ -167,6 +179,12 @@ def load_source_text(cache_path: Path, url: str) -> str:
 
 def parse_csv(text: str) -> list[dict[str, str]]:
     return list(csv.DictReader(io.StringIO(text, newline="")))
+
+
+def load_json_if_exists(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def strip_accents(value: str) -> str:
@@ -257,6 +275,24 @@ def extract_comment_excerpt(value: str | None, max_sentences: int = 2, max_chars
         excerpt = excerpt[: max_chars - 1].rsplit(" ", 1)[0].rstrip(",;:-")
         excerpt = f"{excerpt}..."
     return excerpt
+
+
+def lookup_family_enrichment(
+    enrichment: dict,
+    scientific_name: str,
+    genus: str | None,
+) -> str | None:
+    exact_match = ((enrichment.get("byScientificName") or {}).get(scientific_name) or {}).get(
+        "family"
+    )
+    if exact_match:
+        return clean_taxon(exact_match)
+
+    genus_match = ((enrichment.get("byGenus") or {}).get(genus or "") or {}).get("family")
+    if genus_match:
+        return clean_taxon(genus_match)
+
+    return None
 
 
 def canonical_genus(value: str | None) -> str | None:
@@ -728,6 +764,25 @@ def build_species_description(species: dict, enrichment: dict | None) -> dict:
     }
 
 
+def apply_curated_species_overrides(species: dict) -> None:
+    override = CURATED_SPECIES_OVERRIDES.get(species["scientificName"])
+    if not override:
+        return
+
+    for key, value in override.items():
+        species[key] = value
+
+    if species.get("order"):
+        taxonomy_path = list(species.get("taxonomyPath") or [])
+        if species["order"] not in taxonomy_path:
+            insertion_index = 0
+            for anchor in (species.get("majorClade"), species.get("lineage")):
+                if anchor in taxonomy_path:
+                    insertion_index = max(insertion_index, taxonomy_path.index(anchor) + 1)
+            taxonomy_path.insert(insertion_index, species["order"])
+            species["taxonomyPath"] = taxonomy_path
+
+
 def build_size_indexes(rows: list[dict[str, str]]) -> tuple[dict[str, dict], dict[str, dict]]:
     exact_index: dict[str, dict] = {}
     genus_groups: defaultdict[str, list[dict]] = defaultdict(list)
@@ -806,6 +861,7 @@ def build_species_database(
     occurrence_rows: list[dict[str, str]],
     exact_size_index: dict[str, dict],
     genus_size_index: dict[str, dict],
+    family_enrichment: dict,
 ) -> dict:
     preferred_taxa: dict[str, dict[str, str]] = {}
     enrichment_by_id: dict[str, dict | None] = {}
@@ -839,7 +895,11 @@ def build_species_database(
         size_match = "exact" if exact_size else "genus_proxy" if genus_size else None
         enrichment_by_id[key] = size_record
 
-        family = clean_taxon(row.get("family")) or (size_record or {}).get("family")
+        family = (
+            clean_taxon(row.get("family"))
+            or (size_record or {}).get("family")
+            or lookup_family_enrichment(family_enrichment, scientific_name, genus)
+        )
         major_clade = clean_taxon(row.get("class"))
         order = clean_taxon(row.get("order"))
         atlas_group = infer_atlas_group(
@@ -892,6 +952,7 @@ def build_species_database(
                 "acceptedNo": int(key),
                 "occurrenceCount": int(row.get("n_occs") or "0"),
             },
+            "classificationNote": None,
             "description": None,
             "image": None,
             "localityCount": 0,
@@ -942,7 +1003,8 @@ def build_species_database(
                 "genus": genus,
                 "atlasGroup": atlas_group,
                 "lineage": lineage,
-                "family": clean_taxon(row.get("family")),
+                "family": clean_taxon(row.get("family"))
+                or lookup_family_enrichment(family_enrichment, scientific_name, genus),
                 "majorClade": major_clade,
                 "order": order,
                 "taxonomyPath": [part for part in [major_clade, lineage, order, clean_taxon(row.get("family")), genus] if part]
@@ -976,6 +1038,7 @@ def build_species_database(
                     "acceptedNo": int(key),
                     "occurrenceCount": 0,
                 },
+                "classificationNote": None,
                 "description": None,
                 "image": None,
                 "localityCount": 0,
@@ -1022,6 +1085,7 @@ def build_species_database(
         locality["count"] += 1
 
     for key, species in species_by_id.items():
+        apply_curated_species_overrides(species)
         localities = sorted(
             species_localities.get(key, {}).values(),
             key=lambda item: (-item["count"], item["lat"], item["lng"]),
@@ -1080,6 +1144,7 @@ def build_species_database(
                 "Only accepted species-level PBDB names are retained in the generated database.",
                 "Map localities are aggregated from PBDB species-level fossil occurrences with coordinates.",
                 "Size values are currently enriched only where the dinosaur-focused World Dinosaur Dataset provides an exact species match or genus proxy.",
+                "Missing family names may be conservatively filled from explicit Wikipedia or Wikispecies family rows when PBDB leaves them blank.",
                 "Each species record includes a generated description, with supplemental source commentary when an exact enrichment match is available.",
                 "Each species record includes a local atlas silhouette fallback image matched to its broad lineage.",
             ],
@@ -1104,6 +1169,16 @@ def build_species_database(
                     "name": "World Dinosaur Dataset",
                     "url": WORLD_DINO_URL,
                     "role": "Dinosaur length, weight, and type enrichment when available",
+                },
+                {
+                    "name": "Wikipedia",
+                    "url": "https://en.wikipedia.org/",
+                    "role": "Conservative family backfill from explicit family rows when source taxonomy is blank",
+                },
+                {
+                    "name": "Wikispecies",
+                    "url": "https://species.wikimedia.org/",
+                    "role": "Conservative family backfill from explicit family rows when source taxonomy is blank",
                 },
             ],
         },
@@ -1162,11 +1237,13 @@ def main() -> None:
     )
 
     exact_size_index, genus_size_index = build_size_indexes(size_rows)
+    family_enrichment = load_json_if_exists(raw_dir / "wikipedia-family-enrichment.json")
     database = build_species_database(
         taxa_rows,
         occurrence_rows,
         exact_size_index,
         genus_size_index,
+        family_enrichment,
     )
 
     write_json(data_dir / "dinosaur-database.json", database)
